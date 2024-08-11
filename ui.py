@@ -20,8 +20,8 @@ class QuizzInterface:
         self.question_text = self.canvas.create_text(150, 125,width=280, text="Hi", fill=THEME_COLOR, font=FONT)
         self.canvas.grid(column=0, row=1, columnspan=2, pady=50)
 
-        true_img = PhotoImage(file="images/true.png")
-        false_img = PhotoImage(file="images/false.png")
+        true_img = PhotoImage(file="true.png")
+        false_img = PhotoImage(file="false.png")
 
         self.right_button = Button(image=true_img, bg=THEME_COLOR, command=self.true_button)
         self.right_button.config(padx=20, pady=20)
